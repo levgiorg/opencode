@@ -210,14 +210,7 @@ export function tui(input: {
                 <KVProvider>
                   <ToastProvider>
                     <RouteProvider
-                      initialRoute={
-                        input.args.continue
-                          ? {
-                              type: "session",
-                              sessionID: "dummy",
-                            }
-                          : undefined
-                      }
+                      initialRoute={undefined}
                     >
                       <TuiConfigProvider config={input.config}>
                         <SDKProvider
